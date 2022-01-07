@@ -26,4 +26,4 @@ This project is being developed using React + Electron + Python + SQLite3.
 
 ## Scripts
 
-To run, use: ```npm start-app```
+To run, use: ```npm start```
