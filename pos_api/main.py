@@ -4,4 +4,5 @@
 import make_db as make_db
 
 if __name__ == '__main__':
-    make_db.create_connection()
+    order = make_db.create_all_tables()
+    print("Order db path: " + order)

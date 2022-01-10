@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `category` (
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `name` text DEFAULT "UNDEFINED" NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS `item` (
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `name` text DEFAULT "UNDEFINED" NOT NULL,
+  `price` real DEFAULT 0.00 NOT NULL,
+  FOREIGN KEY(id) REFERENCES category(id)
+);
