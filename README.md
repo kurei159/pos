@@ -27,3 +27,11 @@ This project is being developed using React + Electron + Python + SQLite3.
 ## Scripts
 
 To run, use: ```npm start```
+
+## Dependencies
+
+Create React App
+
+React Router
+
+MUI w/emotion
