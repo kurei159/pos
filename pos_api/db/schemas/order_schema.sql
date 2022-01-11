@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS `order` (
 
 CREATE TABLE IF NOT EXISTS `item` (
   `id` integer PRIMARY KEY AUTOINCREMENT,
-  `item_id` integer DEFAULT 1 NOT NULL,
+  `item_cat_id` integer,
+  `item_id` integer,
   `quantity` integer DEFAULT 1,
   `total` real DEFAULT 0.00 NOT NULL,
   FOREIGN KEY(id) REFERENCES category(id)
