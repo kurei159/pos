@@ -8,7 +8,8 @@ CREATE TABLE IF NOT EXISTS `zip_code` (
 
 CREATE TABLE IF NOT EXISTS `customer` (
   `id` integer PRIMARY KEY AUTOINCREMENT,
-  `name` text,
+  `fname` text,
+  `lname` text,
   `address` text,
   `zip_code` integer,
   `phone` integer NOT NULL,

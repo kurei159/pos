@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 export default function home() {
     return (
-        <div>
+        <div className='home'>
             <div className="main_menu">
                 <Grid container
                 direction="row"
@@ -20,11 +20,11 @@ export default function home() {
                 justifyContent="center"
                 >
                 <Stack direction="row" spacing={1}>
-                    <Link to="/customer">
-                        <Button variant="contained" fontSize="inherit" className="main_btn" ><h3>Delivery <br/> <DeliveryDiningIcon /></h3></Button>
+                    <Link to="/customer" style={{ textDecoration: 'none' }}>
+                        <Button variant="contained" className="main_btn"  ><h3>Delivery <br/> <DeliveryDiningIcon /></h3></Button>
                     </Link>
-                        <Button variant="contained" fontSize="inherit" className="main_btn"><h3>PickUp <br/> <ShoppingBagIcon /></h3></Button>
-                        <Button variant="contained" fontSize="inherit" className="main_btn"><h3>Dine-In <br/> <LocalDiningIcon /></h3></Button>
+                        <Button variant="contained" className="main_btn"><h3>PickUp <br/> <ShoppingBagIcon /></h3></Button>
+                        <Button variant="contained" className="main_btn"><h3>Dine-In <br/> <LocalDiningIcon /></h3></Button>
                 </Stack>
                 </Grid>
             </div>

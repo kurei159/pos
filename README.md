@@ -35,3 +35,5 @@ Create React App
 React Router
 
 MUI w/emotion
+
+Redux
