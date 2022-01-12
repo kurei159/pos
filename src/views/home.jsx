@@ -20,10 +20,12 @@ export default function home() {
                 justifyContent="center"
                 >
                 <Stack direction="row" spacing={1}>
-                    <Link to="/customer" style={{ textDecoration: 'none' }}>
-                        <Button variant="contained" className="main_btn"  ><h3>Delivery <br/> <DeliveryDiningIcon /></h3></Button>
+                    <Link to="/">
+                        <Button variant="contained" className="main_btn" disabled><h3>Delivery <br/> <DeliveryDiningIcon /></h3></Button>
                     </Link>
+                    <Link to="/customer">
                         <Button variant="contained" className="main_btn"><h3>PickUp <br/> <ShoppingBagIcon /></h3></Button>
+                    </Link>
                         <Button variant="contained" className="main_btn"><h3>Dine-In <br/> <LocalDiningIcon /></h3></Button>
                 </Stack>
                 </Grid>
