@@ -1,0 +1,39 @@
+.orderList_main {
+    display: inline-block;
+    width: 40wh;
+    height: 92vh;
+    margin: 5%;
+}
+
+.orderList_table {
+    height: 60%;
+    max-height: 60%;
+    overflow-y: scroll;
+}
+
+.orderList_row {
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.orderList_row:hover {
+    background-color: rgb(223, 223, 223);
+    transition-duration: .5s;
+}
+
+.orderList_btnGroup {
+    display: flex;
+    justify-content: center;
+}
+
+.orderList_btn {
+    font-size: xx-large;
+}
+
+.orderList_total {
+    font-size: x-large;
+    height: 100;
+    display: "flex";
+    border: "1px solid black";
+    padding: 8;
+}
