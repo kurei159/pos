@@ -23,10 +23,10 @@ export default function home() {
                     <Link to="/" style={{ textDecoration: 'none' }}>
                         <Button variant="contained" className="main_btn" disabled><h3>Delivery <br/> <DeliveryDiningIcon /></h3></Button>
                     </Link>
-                    <Link to="/order_menu" order_type={"Pick Up"} style={{ textDecoration: 'none' }}>
+                    <Link to={{pathname:"/order_menu", state: {order_type: "Pick-Up"}}} style={{ textDecoration: 'none' }}>
                         <Button variant="contained" className="main_btn"><h3>PickUp <br/> <ShoppingBagIcon /></h3></Button>
                     </Link>
-                    <Link to="/order_menu" order_type={"Dine In"} style={{ textDecoration: 'none' }}>
+                    <Link to={{pathname:"/order_menu", state: {order_type: "Dine-In"}}} style={{ textDecoration: 'none' }}>
                         <Button variant="contained" className="main_btn"><h3>Dine-In <br/> <LocalDiningIcon /></h3></Button>
                     </Link>
                 </Stack>
