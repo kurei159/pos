@@ -1,0 +1,463 @@
+    {
+        "categories": {
+            "Appetizers":{
+                "cat_id": 1,
+                "isSub": false,
+                "items": {
+                    "A1. Egg Roll(PK) (2)": {
+                        "item_id": 1,
+                        "Price": 2.99
+                    },
+                    "A1. Fried Spring Roll (Veg) (2)": {
+                        "item_id": 2,
+                        "Price": 2.99
+                    },
+                    "A2. Fried Shrimp Roll (2)": {
+                        "item_id": 3,
+                        "Price": 3.99
+                    },
+                    "A3. Fresh Soft Summer Roll (2)": {
+                        "item_id": 4,
+                        "Price": 5.29
+                    },
+                    "A4. Fried Biscuit (10)": {
+                        "item_id": 5,
+                        "Price": 4.29
+                    },
+                    "A5. Fantail Shrimp (6)": {
+                        "item_id": 6,
+                        "Price": 5.99
+                    },
+                    "A7. Fried Chicken Wings": {
+                        "item_id": 7,
+                        "4 Pieces": {
+                            "Price": 5.99
+                        },
+                        "8 Pieces": {
+                            "Price": 10.99
+                        }
+                    },
+                    "A8. Steamed Pork Dumplings (6)": {
+                        "item_id": 8,
+                        "Price": 5.99
+                    },
+                    "A9. Fried Pork Dumplings (6)": {
+                        "item_id": 9,
+                        "Price": 5.99
+                    },
+                    "A11. Cheese Puffs (6)": {
+                        "item_id": 10,
+                        "Price": 5.99
+                    },
+                    "A12. Pu Pu": {
+                        "item_id": 11,
+                        "Price": 6.29
+                    },
+                    "A13. Crab Nuggets (6)": {
+                        "item_id": 12,
+                        "Price": 5.99
+                    },
+                    "A14. Edamame": {
+                        "item_id": 13,
+                        "Price": 3.99
+                    }
+                }
+            },
+            "Kid's Menu": {
+                "cat_id": 2,
+                "isSub": false,
+                "items": {
+                    "K1. Fried Jumbo Shrimp (4)": {
+                        "item_id": 1,
+                        "Price": 6.99
+                    },
+                    "K2. Chicken Nuggets (6)": {
+                        "item_id": 2,
+                        "Price": 6.99
+                    },
+                    "K3. Fried Chicken Wings (4)": {
+                        "item_id": 3,
+                        "Price": 7.99
+                    },
+                    "K4. French Fries": {
+                        "item_id": 4,
+                        "Price": 3.99
+                    }
+                }
+            },
+            "After 5PM Lunch": {
+                "cat_id": 3,
+                "isSub": false,
+                "items": {
+                    "1. Vegetable Delight": {
+                        "item_id": 1,
+                        "Price": 8.69
+                    },
+                    "2. Sweet & Sour Chicken": {
+                        "item_id": 2,
+                        "Price": 8.69
+                    },
+                    "3. Lemon Chicken": {
+                        "item_id": 3,
+                        "Price": 8.69
+                    },
+                    "3. Chicken Broccoli": {
+                        "item_id": 4,
+                        "Price": 8.69
+                    },
+                    "4, Chicken w/ Vegetables": {
+                        "item_id": 5,
+                        "Price": 8.69
+                    },
+                    "5. Cashew Chicken": {
+                        "item_id": 6,
+                        "Price": 8.69
+                    },
+                    "6. Kung Pao Chicken": {
+                        "item_id": 7,
+                        "Price": 8.69
+                    },
+                    "7a. Jalapeno Chicken": {
+                        "item_id": 8,
+                        "Price": 8.69
+                    },
+                    "7b. Jalapeno Beef": {
+                        "item_id": 9,
+                        "Price": 8.69
+                    },
+                    "7c. Jalapeno Pork": {
+                        "item_id": 10,
+                        "Price": 8.69
+                    },
+                    "7d. Jalapeno Shrimp": {
+                        "item_id": 11,
+                        "Price": 8.69
+                    },
+                    "7e. Jalapeno Combination": {
+                        "item_id": 12,
+                        "Price": 8.69
+                    },
+                    "8. General Tso's Chicken": {
+                        "item_id": 13,
+                        "Price": 8.69
+                    },
+                    "9. Orange Chicken": {
+                        "item_id": 14,
+                        "Price": 8.69
+                    },
+                    "10. Sesame Chicken": {
+                        "item_id": 15,
+                        "Price": 8.69
+                    },
+                    "11. Teriyaki Chicken": {
+                        "item_id": 16,
+                        "Price": 8.69
+                    },
+                    "12. String Bean Chicken": {
+                        "item_id": 17,
+                        "Price": 8.69
+                    },
+                    "13. Sweet & Sour Pork": {
+                        "item_id": 18,
+                        "Price": 8.69
+                    },
+                    "14. Beef w/ Snow Peas": {
+                        "item_id": 19,
+                        "Price": 8.69
+                    },
+                    "15. Pepper Steak": {
+                        "item_id": 20,
+                        "Price": 8.69
+                    },
+                    "16. Beef w/ Vegetables": {
+                        "item_id": 21,
+                        "Price": 8.69
+                    },
+                    "17. Beef w/ Broccoli": {
+                        "item_id": 22,
+                        "Price": 8.69
+                    },
+                    "18. Teriyaki Beef": {
+                        "item_id": 23,
+                        "Price": 8.69
+                    },
+                    "19a. Mongolian Chicken": {
+                        "item_id": 24,
+                        "Price": 8.69
+                    },
+                    "19b. Mongolian Beef": {
+                        "item_id": 25,
+                        "Price": 8.69
+                    },
+                    "19c. Mongolian Pork": {
+                        "item_id": 26,
+                        "Price": 8.69
+                    },
+                    "19d. Mongolian Shrimp": {
+                        "item_id": 27,
+                        "Price": 8.69
+                    },
+                    "19e. Mongolian Combination": {
+                        "item_id": 28,
+                        "Price": 8.69
+                    },
+                    "20. Sweet & Sour Shrimp": {
+                        "item_id": 29,
+                        "Price": 8.69
+                    },
+                    "21. Shrimp w/ Broccoli": {
+                        "item_id": 30,
+                        "Price": 8.69
+                    },
+                    "22. Kung Pao Shrimp": {
+                        "item_id": 31,
+                        "Price": 8.69
+                    },
+                    "23. Happy Family": {
+                        "item_id": 32,
+                        "Price": 8.69
+                    },
+                    "24a. Chicken Lo Mein": {
+                        "item_id": 33,
+                        "Price": 8.69
+                    },
+                    "24b. Beef Lo Mein" : {
+                        "item_id": 34,
+                        "Price": 8.69
+                    },
+                    "24c. Pork Lo Mein": {
+                        "item_id": 35,
+                        "Price": 8.69
+                    },
+                    "24d. Shrimp Lo Mein": {
+                        "item_id": 36,
+                        "Price": 8.69
+                    },
+                    "24e. Combination Lo Mein": {
+                        "item_id": 37,
+                        "Price": 8.69
+                    },
+                    "25a. Chicken Fried Rice": {
+                        "item_id": 38,
+                        "Price": 8.69
+                    },
+                    "25b. Beef Fried Rice": {
+                        "item_id": 39,
+                        "Price": 8.69
+                    },
+                    "25c. Pork Fried Rice": {
+                        "item_id": 40,
+                        "Price": 8.69
+                    },
+                    "25d. Shrimp Fried Rice": {
+                        "item_id": 41,
+                        "Price": 8.69
+                    },
+                    "25e. Combination Fried Rice": {
+                        "item_id": 42,
+                        "Price": 8.69
+                    },
+                    "26. Boneless Spare Ribs": {
+                        "item_id": 43,
+                        "Price": 8.69
+                    },
+                    "27. Pineapple Chicken": {
+                        "item_id": 44,
+                        "Price": 8.69
+                    },
+                    "28. Triple Delight": {
+                        "item_id": 45,
+                        "Price": 8.69
+                    },
+                    "29. Moo Goo Gai Pan": {
+                        "item_id": 46,
+                        "Price": 8.69
+                    },
+                    "Soda $1.00": {
+                        "item_id": 47,
+                        "Price": 1.00
+                    },
+                    "Extra Sauce": {
+                        "item_id": 48,
+                        "Price": 1.00
+                    }
+                }
+            },
+            "Beverages": {
+                "cat_id": 4,
+                "isSub": false,
+                "items": {
+                    "Iced Tea": {
+                        "item_id": 1,
+                        "Price": 1.50
+                    },
+                    "Soft Drink": {
+                        "item_id": 2,
+                        "Price": 1.50
+                    },
+                    "Hot Tea": {
+                        "item_id": 3,
+                        "Price": 2.50
+                    }
+                }
+
+            },
+            "Party Tray": {
+                "cat_id": 5,
+                "isSub": false,
+                "items": {
+                    "Fried Rice": {
+                        "item_id": 1,
+                        "Price": 35.00
+                    },
+                    "Lo Mein": {
+                        "item_id": 2,
+                        "Price": 38.00
+                    },
+                    "Chicken": {
+                        "item_id": 3,
+                        "Price": 40.00
+                    },
+                    "Beef": {
+                        "item_id": 4,
+                        "Price": 48.00
+                    },
+                    "Seafood": {
+                        "item_id": 5,
+                        "Price": 48.00
+                    }
+                }
+            },
+            "Entrees": {
+                "cat_id": 6,
+                "isSub": true,
+                "Pork": {
+                    "items": {
+                        "P1. Sweet & Sour Pork": {
+                            "item_id": 1,
+                            "Price": 9.99
+                        },
+                        "P2. Pork w/ Garlic Sauce": {
+                            "item_id": 2,
+                            "Price": 9.99
+                        },
+                        "P3. Pork w/ String Beans": {
+                            "item_id": 3,
+                            "Price": 9.99
+                        },
+                        "P4. Pork w/ Snow Peas": {
+                            "item_id": 4,
+                            "Price": 9.99
+                        },
+                        "P6. Boneless Spare Ribs": {
+                            "item_id": 5,
+                            "Price": 9.99
+                        }
+                    }
+                },
+                "Chicken": {
+                    "items": {
+                        "C1. Sweet and Sour Chicken": {
+                            "item_id": 1,
+                            "Price": 9.99
+                        },
+                        "C1. Lemon Chicken": {
+                            "item_id": 2,
+                            "Price": 9.99
+                        },
+                        "C2. Chicken w/ Vegetable": {
+                            "item_id": 3,
+                            "Price": 9.99
+                        },
+                        "C3. Chicken Garlic Sauce": {
+                            "item_id": 4,
+                            "Price": 9.99
+                        },
+                        "C4. Pineapple Chicken": {
+                            "item_id": 5,
+                            "Price": 9.99
+                        },
+                        "C5. Jalapeno Chicken": {
+                            "item_id": 6,
+                            "Price": 9.99
+                        },
+                        "C6. Cashew Chicken": {
+                            "item_id": 7,
+                            "Price": 9.99
+                        },
+                        "C7. Kung Pao Chicken": {
+                            "item_id": 8,
+                            "Price": 9.99
+                        },
+                        "C8. Curry Chicken": {
+                            "item_id": 9,
+                            "Price": 9.99
+                        },
+                        "C9. Chicken w/ Broccoli": {
+                            "item_id": 10,
+                            "Price": 9.99
+                        },
+                        "C10. Hunan Chicken": {
+                            "item_id": 11,
+                            "Price": 9.99
+                        },
+                        "C11. Mongolian Chicken": {
+                            "item_id": 12,
+                            "Price": 9.99
+                        },
+                        "C12. Chicken w/ String Bean": {
+                            "item_id": 13,
+                            "Price": 9.99
+                        },
+                        "C13. Chicken w/ Snow Peas": {
+                            "item_id": 14,
+                            "Price": 9.99
+                        },
+                        "C14. Moo Goo Gai Pan": {
+                            "item_id": 15,
+                            "Price": 9.99
+                        }
+                    }
+                },
+                "Beef": {
+                    "items": {
+                        "B1. Pepper Steak": {
+                            "item_id": 1,
+                            "Price": 10.99
+                        },
+                        "B2. Beef w/ Vegetable": {
+                            "item_id": 2,
+                            "Price": 10.99
+                        },
+                        "B3. Beef w/ Snow Peas": {
+                            "item_id": 3,
+                            "Price": 10.99
+                        },
+                        "B4. Curry Beef": {
+                            "item_id": 4,
+                            "Price": 10.99
+                        },
+                        "B5. Mongolian Beef": {
+                            "item_id": 5,
+                            "Price": 10.99
+                        },
+                        "B6. Beef w/ Broccoli": {
+                            "item_id": 6,
+                            "Price": 10.99
+                        },
+                        "B7. Jalapeno Beef": {
+                            "item_id": 7,
+                            "Price": 10.99
+                        },
+                        "B8. Beef w/ String Beans": {
+                            "item_id": 8,
+                            "Price": 10.99
+                        }
+                    }
+                },
+                "Vegetables": {
+
+                }
+            }
+        }
+    }
