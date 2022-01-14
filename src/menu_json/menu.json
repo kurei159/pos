@@ -1,6 +1,6 @@
-    {
-        "categories": {
-            "Appetizers":{
+    [
+            {
+                "name": "Appetizers",
                 "cat_id": 1,
                 "isSub": false,
                 "items": {
@@ -63,7 +63,8 @@
                     }
                 }
             },
-            "Kid's Menu": {
+            {
+                "name": "Kid's Menu",
                 "cat_id": 2,
                 "isSub": false,
                 "items": {
@@ -85,7 +86,8 @@
                     }
                 }
             },
-            "After 5PM Lunch": {
+            {
+                "name": "After 5PM Lunch",
                 "cat_id": 3,
                 "isSub": false,
                 "items": {
@@ -283,7 +285,8 @@
                     }
                 }
             },
-            "Beverages": {
+            {
+                "name": "Beverages",
                 "cat_id": 4,
                 "isSub": false,
                 "items": {
@@ -302,7 +305,8 @@
                 }
 
             },
-            "Party Tray": {
+            {
+                "name": "Party Tray",
                 "cat_id": 5,
                 "isSub": false,
                 "items": {
@@ -328,10 +332,13 @@
                     }
                 }
             },
-            "Entrees": {
+            {
+                "name": "Entrees",
                 "cat_id": 6,
                 "isSub": true,
                 "Pork": {
+                    "name": "Pork",
+                    "sub_id": 1,
                     "items": {
                         "P1. Sweet & Sour Pork": {
                             "item_id": 1,
@@ -356,6 +363,8 @@
                     }
                 },
                 "Chicken": {
+                    "name": "Chicken",
+                    "sub_id": 2,
                     "items": {
                         "C1. Sweet and Sour Chicken": {
                             "item_id": 1,
@@ -420,6 +429,8 @@
                     }
                 },
                 "Beef": {
+                    "name": "Beef",
+                    "sub_id": 3,
                     "items": {
                         "B1. Pepper Steak": {
                             "item_id": 1,
@@ -456,8 +467,9 @@
                     }
                 },
                 "Vegetables": {
+                    "name": "Vegetables",
+                    "sub_id": 4
 
                 }
             }
-        }
-    }
+        ]
