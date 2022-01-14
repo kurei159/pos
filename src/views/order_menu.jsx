@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Grid } from '@mui/material'
 import OrderList from "../components/order_menu/orderList"
+import OrderMenu from "../components/order_menu/orderMenu"
 import { Link } from 'react-router-dom';
 
 const order_menu = (props) => {
@@ -12,7 +13,7 @@ const order_menu = (props) => {
                         <OrderList order_type={props.order_type} />
                     </Grid>
                     <Grid item xs={8}>
-                    <Link to="/" >Back</Link>
+                        <OrderMenu />
                     </Grid>
                 </Grid>
             </Box>

@@ -1,0 +1,5 @@
+.orderList_menu {
+    display: flex;
+    margin-top: 2%;
+    overflow: hidden;
+}

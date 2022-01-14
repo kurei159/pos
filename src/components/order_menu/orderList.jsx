@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, CardContent, ButtonGroup, Button, Box, IconButton} from "@mui/material";
+import {Card, CardContent, ButtonGroup, Box, IconButton} from "@mui/material";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -13,6 +13,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import ClearIcon from '@mui/icons-material/Clear';
 import EditIcon from '@mui/icons-material/Edit';
 import { styled } from '@mui/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 import "./orderList.css";
 
 // ------------------Test Functions------------
@@ -67,6 +68,7 @@ var Selected = {
     item: []
 }
 
+// WIP
 function SelectHandler(o) {
     Selected.selected = true;
     Selected.item = o;
@@ -79,7 +81,7 @@ function SelectHandler(o) {
 const SubtotalDisplay = styled(Box)({
     display: 'flex',
     paddingRight: 4,
-    flexGrow: 1,
+    paddingTop: 20,
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
     fontSize: 'large',
@@ -87,18 +89,21 @@ const SubtotalDisplay = styled(Box)({
 
 const TaxDisplay = styled(Box)({
     display: 'flex',
-    paddingRight: 4,
+    paddingRight: 8,
+    paddingTop: 4,
+    paddingBottom: 10,
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
     fontSize: 'large',
 })
 
+
 const TotalDisplay = styled(Box)({
     display: 'flex',
-    paddingRight: 4,
+    paddingRight: 8,
+    paddingTop: 8,
     flexGrow: 1,
     justifyContent: 'flex-end',
-    alignItems: 'flex-end',
     fontSize: 'x-large',
 });
 
@@ -117,7 +122,6 @@ const OrderTable = styled(Paper)({
                     {props.order_type}
                     <Divider />
                     <div>Ticket Number Here</div>
-                    
                 </CardContent>
                 <Divider />
                 <OrderTable>
@@ -165,15 +169,16 @@ const OrderTable = styled(Paper)({
                     </Box>
                 <Divider />
                 <SubtotalDisplay>
-                Subtotal: {getSubtotal().toFixed(2)}
+                Subtotal: ${getSubtotal().toFixed(2)}
                 </SubtotalDisplay>
                 <TaxDisplay>
-                Tax: {getTax().toFixed(2)}
+                Tax: ${getTax().toFixed(2)}
                 </TaxDisplay>
                 <Divider variant="inset"/>
                 <TotalDisplay>
-                Total: {getTotal().toFixed(2)}
+                Total: ${getTotal().toFixed(2)}
                 </TotalDisplay>
+                <CssBaseline />
             </Card>
         </div>
     )
