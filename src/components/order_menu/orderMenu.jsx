@@ -103,7 +103,7 @@ class orderMenu extends Component {
                 <Divider style={{marginBottom: "1%"}} />
                 <Grid container>
                     {
-                        curCat
+                        
                     }
                 </Grid>
                 </Stack>

@@ -28,4 +28,4 @@ yarn-error.log*
 /pos_api/db/dl_sqlite/orders/*
 
 #json menu
-/src/menu_json/menu
+/src/menu_json/menu.json
