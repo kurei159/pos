@@ -1,5 +1,5 @@
 import React, { Component }from 'react'
-import { Card, CardActions, Stack, Button, ButtonGroup } from "@mui/material"
+import { Card, CardActions, Stack, Button, ButtonGroup, Grid } from "@mui/material"
 import { styled } from '@mui/styles';
 import Toolbar from '@mui/material/Toolbar';
 import Divider from '@mui/material/Divider';
@@ -17,62 +17,95 @@ const CategoryBtn = styled(Button) ({
     float: "right"
 })
 
-function clickedCat(props) {
-    console.log("Clicked " + props);
+var selectedCat = 0
+var curCat;
 
+function clickedCat(props) {
+    selectedCat = props;
+    console.log("Clicked " + props);
+    curCat = extractCurCat();
+    console.log(curCat);
+}
+
+function extractCurCat() {
+    console.log(menuFile.length);
+    for(var i = 0; i < menuFile.length; i++) {
+        if(menuFile[i].id == selectedCat) {
+            return menuFile[i].items;
+        }
+    }
 }
 
 class orderMenu extends Component {
+    componentDidMount() {
+        clickedCat(1);
+    }
     render() {
         return (<div>
             <Card className="orderList_menu" sx={{ boxShadow: 3 }}>
                 <Stack direction="column">
-                <Toolbar disableGutters>
-                    <CardActions>
-                        <Stack direction="row" spacing={1}>
-                        <Button variant="outlined" >
-                            <Link to="/" style={{ textDecoration: 'none', color: 'WhiteSmoke' }}>
-                                <ArrowBackIosNewIcon/><br/>BACK
-                            </Link>
-                            </Button>
+                <Toolbar>
+                        <Grid container direction="row" spacing={1} justifyContent="flex-start" alignItems="center">
+                            <Grid item>
+                                <Button variant="outlined" >
+                                <Link to="/" style={{ textDecoration: 'none', color: 'WhiteSmoke' }}>
+                                    <ArrowBackIosNewIcon/><br/>BACK
+                                </Link>
+                                </Button>
+                            </Grid>
+                            <Grid item>
                             <Button variant="outlined" color="error">
                                 <Link to="/" style={{ textDecoration: 'none', color: 'red'}}>
                                     <ClearIcon/><br/>CLEAR
                                 </Link>
                             </Button>
+                            </Grid>
+                            <Grid item>
                             <Button variant="outlined" color="warning">
                                 <Link to="/" style={{ textDecoration: 'none', color:'DarkOrange'}}>
                                     <DeliveryDiningOutlinedIcon/><br/>DELIVERY
                                 </Link>
                             </Button>
+                            </Grid>
+                            <Grid item>
                             <Button variant="outlined">
                                 <Link to="/" style={{ textDecoration: 'none', color: 'SkyBlue'}}>
                                     <ListAltOutlinedIcon/><br/>RECALL
                                 </Link>
                             </Button>
+                            </Grid>
+                            <Grid item>
                             <Button variant="outlined">
                                 <Link to="/" style={{ textDecoration: 'none', color: 'SkyBlue'}}>
                                     <EditOutlinedIcon/><br/>OPEN ITEM
                                 </Link>
                             </Button>
-                            <Button variant="outlined" color="success">
+                            </Grid>
+                            <Grid item xs={2}>
+                            <Button variant="outlined" color="success" style={{minWidth: '130px'}}>
                             <Link to="/" style={{ textDecoration: 'none', color: 'SpringGreen'}}>
                             <SendOutlinedIcon/><br/>SEND
                             </Link></Button>
-                        </Stack>
-                    </CardActions>
+                            </Grid>
+                        </Grid>
                 </Toolbar>
                 <Divider style={{marginTop: "2%", marginBottom: "2%"}} />
-                <Toolbar>
-                    <CardActions>
+                <Grid container rowSpacing={2} columnSpacing={1} justifyContent="flex-start" alignItems="center" style={{textAlign: "center"}}>
                     {
                         menuFile.map((props) => {
                             return (
-                                <Button key={props.cat_id} onClick={() => clickedCat(props.cat_id)}>{props.name}</Button>
+                                <Grid item xs={2}>
+                                    <Button key={props.id} onClick={() => clickedCat(props.id)} style={{minWidth: '70px', minHeight: '20px'}}>{props.name}</Button>
+                                </Grid>
                             )})
                     }
-                    </CardActions>
-                </Toolbar>
+                </Grid>
+                <Divider style={{marginBottom: "1%"}} />
+                <Grid container>
+                    {
+                        curCat
+                    }
+                </Grid>
                 </Stack>
             </Card>
         </div>)
