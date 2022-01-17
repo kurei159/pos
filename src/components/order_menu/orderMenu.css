@@ -3,3 +3,7 @@
     margin-top: 2%;
     overflow: hidden;
 }
+
+.item_btns {
+    min-height: 65.5vh;
+}

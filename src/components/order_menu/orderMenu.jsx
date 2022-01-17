@@ -11,35 +11,9 @@ import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import { Link } from 'react-router-dom';
 import "./orderMenu.css"
-import menuFile from "../../menu_json/menu.json"
 
-const CategoryBtn = styled(Button) ({
-    float: "right"
-})
-
-var selectedCat = 0
-var curCat;
-
-function clickedCat(props) {
-    selectedCat = props;
-    console.log("Clicked " + props);
-    curCat = extractCurCat();
-    console.log(curCat);
-}
-
-function extractCurCat() {
-    console.log(menuFile.length);
-    for(var i = 0; i < menuFile.length; i++) {
-        if(menuFile[i].id == selectedCat) {
-            return menuFile[i].items;
-        }
-    }
-}
 
 class orderMenu extends Component {
-    componentDidMount() {
-        clickedCat(1);
-    }
     render() {
         return (<div>
             <Card className="orderList_menu" sx={{ boxShadow: 3 }}>
@@ -90,22 +64,6 @@ class orderMenu extends Component {
                         </Grid>
                 </Toolbar>
                 <Divider style={{marginTop: "2%", marginBottom: "2%"}} />
-                <Grid container rowSpacing={2} columnSpacing={1} justifyContent="flex-start" alignItems="center" style={{textAlign: "center"}}>
-                    {
-                        menuFile.map((props) => {
-                            return (
-                                <Grid item xs={2}>
-                                    <Button key={props.id} onClick={() => clickedCat(props.id)} style={{minWidth: '70px', minHeight: '20px'}}>{props.name}</Button>
-                                </Grid>
-                            )})
-                    }
-                </Grid>
-                <Divider style={{marginBottom: "1%"}} />
-                <Grid container>
-                    {
-                        
-                    }
-                </Grid>
                 </Stack>
             </Card>
         </div>)
