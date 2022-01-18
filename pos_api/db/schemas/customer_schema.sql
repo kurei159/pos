@@ -2,12 +2,12 @@ PRAGMA foreign_keys = ON;
 
 
 CREATE TABLE IF NOT EXISTS `zip_code` (
-  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `id` integer PRIMARY KEY,
   `code` integer DEFAULT 0 NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS `customer` (
-  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `id` integer PRIMARY KEY,
   `fname` text,
   `lname` text,
   `address` text,

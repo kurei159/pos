@@ -25,7 +25,4 @@ yarn-error.log*
 # db
 /pos_api/db/dl_sqlite/customer.sqlite
 /pos_api/db/dl_sqlite/menu.sqlite
-/pos_api/db/dl_sqlite/orders/*
-
-#json menu
-/src/menu_json/menu.json
+/pos_api/db/dl_sqlite/orders/
